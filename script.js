@@ -8,7 +8,7 @@ document.getElementById('reportForm').addEventListener('submit', function(event)
     playerIds.forEach((id, index) => {
         setTimeout(() => {
             reportPlayer(id, reason, index + 1, playerIds.length);
-        }, index * 5000);  // Delay between reports
+        }, index * 100);  // Delay between reports
     });
 });
 
